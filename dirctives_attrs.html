@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
  
     <title>
-        Rakesh-Always Trigger The $destroy Event Before Removing Elements In AngularJS Directives
+        Always Trigger The $destroy Event Before Removing Elements In AngularJS Directives
     </title>
  
     <style type="text/css">
@@ -44,8 +44,12 @@
 
         // Create an application module for our demo.
         var app = angular.module( "Demo", [] );
+
+
         // -------------------------------------------------- //
         // -------------------------------------------------- //
+
+
         // I control the root of the application.
         app.controller(
             "AppController",
@@ -97,6 +101,8 @@
                     );
 
                 }
+
+
                 // Return the directive configuration.
                 return({
                     link: link,
